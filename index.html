@@ -22,10 +22,19 @@
             </div>
             <div id="mid">
                 <div class="menu">
-                    <h2>Mercury</h2>
-                    <h2>Venus</h2>
+                    <!-- <h2>Mercury</h2> -->
+                    <!-- <h2>Venus</h2>
                     <h2>Earth</h2>
-                    <h2>Mars</h2>
+                    <h2>Mars</h2> -->
+                    <a class="navb" href="#Mercury">Mercury</a>
+                    <a class="navb" href="#Venus">Venus</a>
+                    <a class="navb" href="#Earth">Earth</a>
+                    <a class="navb" href="#Mars">Mars</a>
+                    <!-- <button onclick="#">Mercury</button>
+                    <button onclick="#">Venus</button>
+                    <button onclick="#">Earth</button>
+                    <button onclick="#">Mars</button> -->
+
                     <!-- <div class="container">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
@@ -34,10 +43,10 @@
                     <div class="dropdown">
                         <input type="submit" value="..." class="dropdown-toggle"/>
                         <div class="dropdown-menu">
-                            <a href="#">Jupiter</a>
-                            <a href="#">Saturn</a>
-                            <a href="#">Uranus</a>
-                            <a href="#">Neptune</a>
+                            <a href="#Jupiter">Jupiter</a>
+                            <a href="#Saturn">Saturn</a>
+                            <a href="#Uranus">Uranus</a>
+                            <a href="#Neptune">Neptune</a>
                             <!-- <a href="#">Pluto</a> -->
                             <!-- <a href="#">Option 3</a> -->
                         </div>
@@ -65,13 +74,18 @@
             <div id="mainBox">
                 <h1>Let's get to know <br> our solar system <br> galaxy</h1>
                 <p>Embark on a cosmic journey across the etheral expanse of the solar system Galaxy and follow the orchestration of the <br> cosmos and the planets weaving stories of their timless existence.</p>
-                <button>Learn More ↓</button>
+                <!-- <button>Learn More ↓</button> -->
+                <a href="#Sun">Learn More ↓</a>
             </div>
         </div>
     </div>
 
-    <div class="Sun">
+    <div class="Sun" id="Sun">
+        <!-- sun-bg -->
+         <img src="./Ellipse 1.png" alt="" id="im3">
+        <!-- stars img -->
         <img src="./Group.png" id="im2">
+        <!-- sun image -->
         <img src="./Layer 2 (5).png" id="im1">
 
         <div id="content">
@@ -85,46 +99,357 @@
                     <i class="ri-donut-chart-line"></i>
                     <div id="i1m">
                         <h3 class="inf">Diameter</h3>
-                        <h1>870,000 <br> Miles</h1>
+                        <h1 id="infh1">870,000 <br> Miles</h1>
                     </div>
                 </div>
                 <div id="info2">
-                    <i class="ri-temp-hot-line"></i>
+                    <i class="ri-temp-hot-line" id="hot"></i>
                     <div id="i2m">
                         <h3 class="inf">Temperature</h3>
-                        <h1>±5,500° <br>Celsius</h1>
+                        <h1 id="infh1">±5,500° <br>Celsius</h1>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="Mercury">
+    <div class="Mercury" id="Mercury">
+        <img src="./Clip path group (3).png" class="combg">
+        <img src="./Clip path group (4).png" class="combg">
         <div id="merimg">
             <img src="/Ellipse 3 (1).png" alt="" class="mimg" id="mi1">
             <img src="./Ellipse 2 (1).png" alt="" class="mimg" id="mi2">
             <img src="./Group (1).png" alt="" class="mimg" id="mi3">
         </div>
+        <div class="mercont">
+            <div id="merinfo">
+                <h1>1. Mercury</h1>
+                <p>Mercury is the closest planet to the Sun and is known for its extreme temperatures and barren,<br>rocky surface. It is one of the four terrestrial planets in our solar system, characterized by their<br>solid, rocky composition.</p>
+            </div>
+            <div id="mercards">
+                <div id="card1" class="mrcard">
+                    <i class="ri-donut-chart-line"></i>
+                    <div id="card1info">
+                        <h3 class="inf">Diameter</h3>
+                        <h1 id="infh1">870,000 <br> Miles</h1>
+                    </div>
+                </div>
+                <div id="card2" class="mrcard">
+                    <i class="ri-temp-hot-line" id="hot"></i>
+                    <div id="card1info">
+                        <h3 class="inf">Day Time Temperature</h3>
+                        <h1 id="infh1">±430° <br>Celsius</h1>
+                    </div>
+                </div>
+                <div id="card3" class="mrcard">
+                    <i class="ri-temp-hot-line" id="cold"></i>
+                    <div id="card1info">
+                        <h3 class="inf">Night Time Temperature</h3>
+                        <h1 id="infh1">-180°<br>Celsius</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="Venus">
-       
+    <div class="Venus" id="Venus">
+        <img src="./Clip path group (3).png" class="combg">
+        <img src="./Clip path group (4).png" class="combg">
         <div id="venimg">
             <img src="./Layer 2 (8).png" alt="">
             <img src="./Ellipse 2.png" alt="">
             <img src="./Ellipse 3.png" alt="">
         </div>
+        <div id="vencont">
+            <div id="main">
+                <h1>2. Venus</h1>
+                <p>Venus is often referred to as Earth's "sister planer" due to its similar size and <br>composition, but it stands out with its extremely inhospitable environment.</p>
+            </div>
+            <div id="vencards">
+                <div id="card1" class="mrcard">
+                    <i class="ri-donut-chart-line"></i>
+                    <div id="card1info">
+                        <h3 class="inf">Diameter</h3>
+                        <h1 id="infh1">7,521 <br> Miles</h1>
+                    </div>
+                </div>
+                <div id="card3" class="mrcard">
+                    <i class="ri-temp-hot-line" id="hot"></i>
+                    <div id="card1info">
+                        <h3 class="inf">Temperature</h3>
+                        <h1 id="infh1">±475°<br>Celsius</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
-    <div class="Earth">
+    <div class="Earth" id="Earth">
+        <img src="./Vector (4).png" id="bge">
+        <img src="./Clip path group (3).png" class="combg" id="ebgg">
+        <img src="./Clip path group (4).png" class="combg" id="ebgg">
+        <div id="ebox">
+            <div id="content">
+                <h1 id="mainh">3. Earth</h1>
+                <p>Earth is the third planet from the Sun and the only known planet to support life. Earth is <br> the only planet known to harbor life. It's a diverse and dynamic world with a wide range of <br> ecosystems, climates, and geological features.</p>
+            </div>
+            <div id="right">
+                <i class="ri-donut-chart-line"></i>
+                <div id="i1m">
+                    <h3 class="inf">Diameter</h3>
+                    <h1>7,918 <br> Miles</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="eimg">
+            <div id="mooncont">
+                <div id="cont">
+                    <h1>Moon Planet</h1>
+                    <p>Earth has a natural satelite, the Moon, which plays a role in stabilizing the planet's <br> rotation and tides. The Moon's gravitational pull causes the ocean tides to rise and fall.</p>   
+                </div>
+                <div id="arr">
+                    <img src="Group (3).png" alt="">
+                </div>
+            </div>
+            <div id="rock">
+                <img src="Group (2).png" id="rocket">
+            </div>
+            <div id="earmoon">
+                <img src="Layer 2 (9).png" id="emoon">
+                <img src="Group 5.png" id="ebg">
+            </div>
+        </div>
+
 
     </div>
     
-    <div class="Mars">
+    <div class="Mars" id="Mars">
+        <img src="./Clip path group (3).png" class="combg" id="marbg">
+        <img src="./Clip path group (4).png" class="combg" id="marbg">
+        <img src="Group 9.png" alt="">
+        <div class="marmoons">
+            <!-- <div id="arrrimg"> -->
+                <img src="Vector (5).png" alt="">
+            <!-- </div> -->
+            <div class="marmooncont">
+                <h1>Martial Moons</h1>
+                <p>Mars has two small moons, Phobos and <br> Deimos, which are irregularly shaped and <br> thought to be captured asteroids.</p>
+            </div>
+        </div>
+        <div class="marcont">
+            <div id="merinfo">
+                <h1>4. Mars</h1>
+                <p>Mars, often referred to as the "Red Planet". is the fourth planet from the Sun and has <br>captivated human imagination for centuries with its reddish appearance and potential <br>for hosting life.</p>
+            </div>
+            <div id="marcards">
+                <div id="card1" class="mrcard">
+                    <i class="ri-donut-chart-line"></i>
+                    <div id="card1info">
+                        <h3 class="inf">Diameter</h3>
+                        <h1 id="infh1">4,212 <br> Miles</h1>
+                    </div>
+                </div>
+                <div id="card2" class="mrcard">
+                    <i class="ri-temp-hot-line" id="hot"></i>
+                    <div id="card1info">
+                        <h3 class="inf">Day Time Temperature</h3>
+                        <h1 id="infh1">±20° <br>Celsius</h1>
+                    </div>
+                </div>
+                <div id="card3" class="mrcard">
+                    <i class="ri-temp-hot-line" id="cold"></i>
+                    <div id="card1info">
+                        <h3 class="inf">Night Time Temperature</h3>
+                        <h1 id="infh1">-73°<br>Celsius</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Jupiter" id="Jupiter">
+        <img src="./Clip path group (3).png" class="combg">
+        <img src="./Clip path group (4).png" class="combg">
+        <img src="Layer 2 (10).png" alt="">
+        <div id="jupcont">
+            <div id="main">
+                <h1>5. Jupiter</h1>
+                <p>Jupiter, the largest planet in our solar system, is a gas giant known for its <br> immense size, powerful storms, and numerous moons.</p>
+            </div>
+            <div id="jupcards">
+                <div id="card1" class="mrcard">
+                    <i class="ri-donut-chart-line"></i>
+                    <div id="card1info">
+                        <h3 class="inf">Diameter</h3>
+                        <h1 id="infh1">86,881 <br> Miles</h1>
+                    </div>
+                </div>
+                <div id="card3" class="mrcard">
+                    <i class="ri-temp-hot-line" id="cold"></i>
+                    <div id="card1info">
+                        <h3 class="inf">Temperature</h3>
+                        <h1 id="infh1">-108°<br>Celsius</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
+    <div class="Saturn" id="Saturn">
+        <img src="./Clip path group (3).png" class="combg">
+        <img src="./Clip path group (4).png" class="combg">
+        <img src="Group 10.png" alt="">
+        <div id="satcont">
+            <div id="main">
+                <h1>6. Saturn</h1>
+                <p>Saturn, often referred to as the "Ringeed Planet", is known for its stunning system of rings <br>that encircle the planets's equator. It's the sixth planet from the Sun and is one of the most <br>visually distinctive objects in our solar system, with more than 80 known satelites</p>
+            </div>
+            <div id="satcards">
+                <div id="card1" class="mrcard">
+                    <i class="ri-donut-chart-line"></i>
+                    <div id="card1info">
+                        <h3 class="inf">Diameter</h3>
+                        <h1 id="infh1">74,898<br> Miles</h1>
+                    </div>
+                </div>
+                <div id="card3" class="mrcard">
+                    <i class="ri-temp-hot-line" id="cold"></i>
+                    <div id="card1info">
+                        <h3 class="inf">Temperature</h3>
+                        <h1 id="infh1">-139°<br>Celsius</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Uranus" id="Uranus">
+        <img src="./Clip path group (3).png" class="combg">
+        <img src="./Clip path group (4).png" class="combg">
+        <img src="Group 11.png" alt="">
+        <div id="urcont">
+            <div id="main">
+                <h1>7. Uranus</h1>
+                <p>Uranus, often referred to as the "Ice Giant", is a unique and <br>mysterious planet in our solar system. It stands out due to its <br>distinct blue-green color and its unusual rotaional axis.</p>
+            </div>
+            <div id="cardds">
+                <div id="card1" class="mrcard">
+                    <i class="ri-donut-chart-line"></i>
+                    <div id="card1info">
+                        <h3 class="inf">Diameter</h3>
+                        <h1 id="infh1">31,518<br> Miles</h1>
+                    </div>
+                </div>
+                <div id="card3" class="mrcard">
+                    <i class="ri-temp-hot-line" id="cold"></i>
+                    <div id="card1info">
+                        <h3 class="inf">Temperature</h3>
+                        <h1 id="infh1">-224°<br>Celsius</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Neptune" id="Neptune">
+        <img src="./Clip path group (3).png" class="combg" id="nepbg">
+        <img src="./Clip path group (4).png" class="combg" id="nepbg">
+        <div id="neptcont">
+            <div id="cont1">
+                <h1>8. Neptune</h1>
+                <p>Neptune, often called the "Blue Giant", is the eighth and the farthest planet from the Sun in lur solar system. It is a giant known for its <br> striiking blue color and tubulent atmosphere.</p>
+            </div>
+            <div id="cont2">
+                <div id="card1">
+                    <!-- diameter -->
+                    <div id="img">
+                        <i class="ri-donut-chart-line"></i>
+                    </div>
+                    <div id="info">
+                        <h2>Diameter</h2>
+                        <h1>30,775 <br>Miles</h1>
+                    </div>
+                </div>
+                <div id="card2">
+                    <!-- temperature -->
+                    <div id="img">
+                        <i class="ri-temp-hot-line" id="cold"></i>
+                    </div>
+                    <div id="info">
+                        <h2>Temperature</h2>
+                        <h1>-218°<br>Celsius</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="nimg">
+            <img src="Group 12.png" alt="">
+        </div>
+    </div>
+
+    <div class="Footer">
+        <img src="./Clip path group (3).png" class="combg" id="footbg">
+        <img src="./Clip path group (4).png" class="combg" id="footbg">
+        <img src="Group 16.png" alt="">
+        <div id="futar">
+            <div id="foot1">
+                <h1>join the education community</h1>
+                <p>Join the Education Community today and be part of a movement that's transforming minds and shaping <br>tomorrows.</p>
+            </div>
+            <div id="foot2">
+                <div id="mailsubs">
+                    <input type="email" name="" id="" placeholder="Enter your email">
+                    <div id="subs">
+                        <h1>Subscribe</h1>
+                        <button id="footsub">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="foot3">
+                <div class="fooooot">
+                    <div id="left">
+                        <i class="ri-leaf-fill"></i>
+                        <!-- <img src="" alt=""> -->
+                        <h1>Galactic.io</h1>
+                    </div>
+                    <div id="mid">
+                        <div class="menu">
+                            <a class="navb" href="#Mercury">Mercury</a>
+                            <a class="navb" href="#Venus">Venus</a>
+                            <a class="navb" href="#Earth">Earth</a>
+                            <a class="navb" href="#Mars">Mars</a>
+                            <!-- <div class="container">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div> -->
+                            <div class="dropdown">
+                                <input type="submit" value="..." class="dropdown-toggle"/>
+                                <div class="dropdown-menu">
+                                    <a href="#Jupiter">Jupiter</a>
+                                    <a href="#">Saturn</a>
+                                    <a href="#">Uranus</a>
+                                    <a href="#">Neptune</a>
+                                    <!-- <a href="#">Pluto</a> -->
+                                    <!-- <a href="#">Option 3</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="right">
+                        <h2>2023 Solarsystemdesign</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

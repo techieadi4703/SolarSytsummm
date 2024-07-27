@@ -12,3 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+let butt=document.getElementById("footsub");
+butt.addEventListener('click',()=>{
+    alert("Thankyou for joining to our community.!!");
+})
