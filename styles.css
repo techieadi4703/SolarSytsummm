@@ -5,11 +5,25 @@
     color: #fff;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
+    /* overflow-x:hidden; */
+    /* overflow-y: auto; */
+    /* background-color: palegreen; */
+    /* width: 100%; */
+}
+#hot{
+    color: #EA712E;
+}
+
+#cold{
+    color: cornflowerblue;
 }
 
 html,body{
     height: 100%;
     width: 100%;
+}
+body{
+    overflow-x: hidden;
 }
 
 /* body{
@@ -27,7 +41,7 @@ html,body{
     background: radial-gradient(70.59% 105.89% at 95.28% 11.1%, #400A46 0%, #340A41 33.26%, #140A35 93.37%, #100A33 100%);
 }
 
-.nav{
+.mainPage .nav{
     padding-top: 2vh;
     display: flex;
     justify-content: space-evenly;
@@ -38,9 +52,10 @@ html,body{
 
 }
 
-#mprt{
+.mainPage #mprt{
     position: absolute;
     top: 0;
+    /* height: max-content; */
     left: 89%;
     z-index: 0;
 }
@@ -122,20 +137,39 @@ html,body{
     padding: 20px;
 }
 
-.menu button{
-    color: #000;
+.menu .navb{
+    text-decoration: none;
+    text-align: center;
+    width: 20%;
+    cursor: pointer;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    /* background-color: cornflowerblue; */
+    padding: 20px;
+    color: white;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+.menu .navb:hover {
+    background-color:rgba(83, 79, 111, 0.83);
+    color:aquamarine;
 }
 
 
 .dropdown {
     position: relative;
     display: inline-block;
-    
 }
 
 .dropdown-toggle {
-    background-color: rgba(222, 184, 135, 0.2);
-    border: 2px solid rgb(255, 255, 255,0.2);
+    /* background-color: rgba(222, 184, 135, 0.2); */
+    /* border: 2px solid rgb(255, 255, 255,0.2); */
+    background-color: transparent;
+    outline: 0;
+    border: 0;
     color: white;
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
@@ -173,7 +207,7 @@ html,body{
 
 
 
-#right{
+.mainPage #right{
     /* text-align: ; */
     padding-left: 20px;
     width: 20%;
@@ -193,7 +227,7 @@ html,body{
     justify-content: center;
     align-items:center;
     position: relative;
-    /* top: 1%; */
+    /* top: 3%; */
 }
 
 .mainPage #bgi{
@@ -227,7 +261,7 @@ html,body{
 
 #img3{
     left: 0;
-    bottom: 92px;
+    bottom: 86px;
     height: 18%;
     /* size: 50%; */
     /* height: 20%; */
@@ -235,13 +269,14 @@ html,body{
 
 #img4{
     right: 0;
-    bottom:92px;
-    height: 37%;
+    bottom:86px;
+    height: 40%;
+    z-index: inherit;
 }
 
 #img5{
     right: 50;
-    bottom:92px;
+    bottom:86px;
     height: 15%;
 }
 
@@ -251,7 +286,9 @@ html,body{
     height:52%;    
 }
 
-#img7{
+.mainContent #img7{
+    /* position: relative; */
+    z-index: inherit;
     top: 20px;
     left: 49%;
 }
@@ -291,13 +328,14 @@ html,body{
 }
 .mainContent #mainBox p{
     /* position: absolute; */
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     font-weight: 500;
     font-size: 2vh;
     /* z-index: 4; */
 }
 
-.mainContent #mainBox button{
+.mainContent #mainBox a{
+    text-decoration: none;
     cursor: pointer;
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
@@ -305,15 +343,21 @@ html,body{
     font-size: 2vh;
     padding:2vh;
     width: 15vw;
-    height: 10vh;
+    height: 12vh;
     border-radius: 5%;
     background: linear-gradient(315deg, #CD1013 1.19%, #FF0004 1.5%, #2500FF 94.46%);
-
+}
+mainContent #mainBox a:hover{
+    /* scale: 120%; */
+    font-size: 3vh;
 }
 
 .Sun{
+    /* overflow-x: hidden; */
+
     height: 100%;
     width:100%;
+    position: relative;
     /* background-color: aquamarine; */
     background: radial-gradient(70.59% 105.89% at 95.28% 11.1%, #400A46 0%, #340A41 33.26%, #140A35 93.37%, #100A33 100%);
     /* object-fit: cover; */
@@ -327,26 +371,40 @@ html,body{
 
 #im2{
     /* background-color: #fff; */
+    width: 90%;
+    left: 5%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+#im3{
+    /* background-color: #fff; */
     width: 100%;
     height: 100%;
     position: absolute;
-    /* z-index: 2; */
+    z-index: 1;
 }
+
+
 #im1{
     width: 100%;
+    margin-top: auto;
     position: absolute;
-    z-index: 5;
+    z-index: 3;
 }
 
 
 
 
 .Sun #content{
-    position: relative;
+    position: absolute;
     /* bottom: 20%; */
-    top: 60%;
+    /* padding: bottom 5%; */
+    z-index: 4;
+    top: 55%;
     margin-top: 8px;
     margin-left: 60px;
+    margin-bottom: 5%;
     width: 46%;
     /* background-color: rgb(70, 70, 0); */
 }
@@ -356,6 +414,10 @@ html,body{
     font-optical-sizing: auto;
     font-weight: 700;
     /* margin-bottom: 10px; */
+}
+.Sun #content p{
+    font-size: 2vh;
+    font-weight: 500;
 }
 
 .Sun #content #mainh{
@@ -374,6 +436,7 @@ html,body{
 
 .Sun #info1{
     /* background-color: cornflowerblue; */
+    border: 4px solid #3a0d45;
     width: 45%;
     background: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #430E49 0.53%, #370D44 32.06%, #170B36 89.03%, #100A33 100%);
     border-radius: 10px;
@@ -383,6 +446,7 @@ html,body{
 }
 .Sun #info2{
     /* background-color: cornflowerblue; */
+    border: 4px solid #3a0d45;
     width: 45%;
     background: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #430E49 0.53%, #370D44 32.06%, #170B36 89.03%, #100A33 100%);
     border-radius: 10px;
@@ -393,28 +457,43 @@ html,body{
 
 .Sun #info1 i{
     position: relative;
-    top:10%;
+    top:19%;
+    margin-right: 2%;
+    font-weight: 900;
     font-size: 8vh;
     color: #fff;
 }
 
 .Sun #info2 i{
+    position: relative;
+    top: 12%;
     font-size: 10vh;
-    color: #EA712E;
+    font-weight: 500;
 }
 
 .Sun .inf{
     font-size: 3vh;
 }
+.Sun #infh1{
+    font-size: 4vh;
+}
 
 
 .Mercury{
+    display: flex;
+    justify-content: space-between;
     height: 100%;
     width: 100%;
     position: relative;
     background: radial-gradient(70.59% 105.89% at 95.28% 11.1%, #400A46 0%, #340A41 33.26%, #140A35 93.37%, #100A33 100%);
+    /* background-image: url("./Vector\ \(3\).png"); */
+    object-fit:contain;
 }
 
+.Mercury .combg{
+    height: 100%;
+    position: absolute;
+}
 
 .Mercury #mimg{
 
@@ -438,6 +517,97 @@ html,body{
     top:14%;
 }
 
+.Mercury .mercont{
+    position: relative;
+    margin-top: 7%;
+    margin-right: 8%;
+    width: 50%;
+    height: 90%;
+    /* background-color: red; */
+}
+
+.mercont #merinfo{
+    padding: 3%;
+    padding-top: 1%;
+    /* background-color: coral; */
+    height: 30%;
+    width: 100%;
+}
+#merinfo h1{
+    margin-bottom: 4%;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 8vh;
+}
+
+#merinfo p{
+    margin-bottom: 4%;
+    font-size: 1.8vh;
+    font-weight: 500;
+} 
+
+.mercont #mercards{
+    padding: 2%;
+    height: 70%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* background-color: palegreen; */
+}
+
+#mercards .inf{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+
+#mercards .mrcard{
+    height: 70%;
+    /* width: 0%; */
+    /* margin: 5%; */
+    /* padding: 2%; */
+    border-radius: 2vh;
+    background: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #430E49 0.53%, #370D44 32.06%, #170B36 89.03%, #100A33 100%);
+    border: 4px solid #3a0d45;
+    display: flex;
+    padding: 7%;
+    background-color: teal;
+    margin: 6%;
+}
+
+#mercards #card3, #card2{
+    width: 100%;
+}
+
+.mrcard h1{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 4vh;
+    font-weight: 700;
+}
+
+.mrcard i{
+    font-weight: 700;
+    font-size: 7.5vh;
+    padding-top: 5.8%;
+    margin-right: 1.5vw;
+    /* margin-left: `
+    vw; */
+}
+
+
+/* #mercards #card1{
+    background-color: chocolate;
+}
+#mercards #card2{
+    background-color: chocolate;
+}
+#mercards #card3{
+    background-color: chocolate;
+} */
+
+
 .Venus{
     height: 100%;
     position: relative;
@@ -453,15 +623,902 @@ html,body{
     bottom: 0;
 }
 
+#vencont #main h1{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 8vh;
+    margin-bottom: 4%;
+}
+
+#vencont #main p{
+    /* margin-bottom: 4%; */
+    /* background-color: palegreen; */
+    /* font-family: "Orbitron", sans-serif; */
+    /* font-optical-sizing: auto; */
+    font-weight: 700;
+    font-size: 1vh;
+}
+
+#vencards{
+    /* background-color: tan; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* background-color: coral; */
+    height: 100%;
+    flex-direction: column;
+}
+
+.Venus .mrcard i{
+    /* background-color: red; */
+    /* height: 20%; */
+    padding: 5%;
+    margin-left: 2%;
+}
+
+.Venus .mrcard .inf{
+    padding-top: 6%;
+    /* margin-left: 40%; */
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    /* font-size: 1vh; */
+}
+
+#vencont{
+    padding: 9%;
+    padding-left: 6%;
+    padding-right: 0;
+    margin-left: 50px;
+    height: 100%;
+    width: 50%;
+    /* background-color: turquoise; */
+    position: relative;
+    left: 0;
+    z-index: 5;
+}
+#vencards .mrcard{
+    /* padding-right: 9%; */
+    width: 60%;
+    height: 27%;
+    padding: 3.2%;
+    margin-top: 10%;
+    display: flex;
+    /* justify-content: center; */
+    border-radius: 2vh;
+    background: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #430E49 0.53%, #370D44 32.06%, #170B36 89.03%, #100A33 100%);
+    border: 4px solid #3a0d45;
+    /* background-color: wheat; */
+}
+
 
 .Earth{
+    position: relative;
     height: 100%;
     width: 100%;
-    background-color: cornflowerblue;
+    /* background-image: url(/Vector\ \(4\).png); */
+    /* object-fit:scale-down; */
+}
+
+.Earth #bge{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.Earth #ebgg{
+    position: absolute;
+    z-index: 0;
+}
+
+
+.Earth #info{
+    /* background-color: aquamarine; */
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.Earth #ebox{
+    height: 23%;
+    position: relative;
+    /* background-color: magenta; */
+    padding-top: 30px;
+    padding: 30px 20px 10px 20px;
+    padding-left: 20px;
+    /* padding-top: 30px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.Earth #content{
+    /* margin-left: 40px; */
+    /* background-color: maroon; */
+    width: 60%;
+}
+
+.Earth #content p{
+    font-size: 2vh;
+    font-weight: 500;
+}
+
+.Earth #right{
+    border-radius: 2vh;
+    background: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #430E49 0.53%, #370D44 32.06%, #170B36 89.03%, #100A33 100%);
+    border: 4px solid #3a0d45;
+    padding: 10px;
+    width: 22%;
+    margin-right: 10%;
+    /* background-image: url(./Vector\ \(2\).png); */
+    /* background: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #430E49 0.53%, #370D44 32.06%, #170B36 89.03%, #100A33 100%); */
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.Earth #ebox h1{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    /* margin-bottom: 10px; */
+}
+
+.Earth #content #mainh{
+    font-size: 8vh;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.Earth #i1m .inf{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 2.2vh;
+}
+
+.Earth #right i{
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    top:20%;
+    font-size: 8vh;
+    font-weight: 900;
+    color: #fff;
+}
+
+.Earth #right #i1m{
+    padding-top: 5%;
+}
+
+#i1m h1{
+    font-size: 4vh;
+}
+/* 
+.eimg{
+    position: relative; */
+/* } */
+.Earth .eimg{
+    /* background-color: cadetblue; */
+    display: flex;
+    /* justify-content: center; */
+    /* position: absolute; */
+    /* bottom: 0; */
+}
+
+#rocket{
+    position: relative;
+    top: 96%;
+    left: 50%;
+}
+
+#mooncont{
+    margin-top: 2%;
+    position:absolute;
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    /* gap: %; */
+}
+
+#mooncont #cont{
+    margin-left: 21vw;
+    /* height: auto; */
+    margin-right: 3vw;
+    padding: 20px;
+    width: 42%;
+    /* background-color: red; */
+}
+
+#cont h1{
+    /* background-color: aqua; */
+    text-align: right;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 3vh;
+}
+
+#cont p{
+    text-align: right;
+    /* padding: 1.5vh; */
+    width: 100%;
+    justify-content: center;
+    /* background-color: burlywood    ; */
+    font-size: 1.6vh;
+    font-weight: 500;
+}
+
+#mooncont #arr{
+    width: 20%;
+    margin-right: 5vw;
+    /* background-color: maroon; */
+}
+
+
+
+/* #earmoon{
+    background-color: palevioletred;
+    position: relative;
+} */
+
+#earmoon #emoon{
+    position: absolute;
+    bottom: 0;
+}
+
+#earmoon #ebg{
+    bottom: 0;
+    position: absolute;
+    left: 7%;
 }
 
 .Mars{
+    position: relative;
     height: 100%;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
+    background: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #430E49 0.53%, #370D44 32.06%, #170B36 89.03%, #100A33 100%);
+}
+
+.Mars #marbg{
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+
+.Mars img{
+    position: absolute;
+    z-index: 2;
+    /* bottom: -90px; */
+    top: 44.25%;
+}
+.Mars .marcont{
+    /* background-color: tan; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* flex-direction: row; */
+    /* margin: 10%; */
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 7%;
+    position: absolute;
+    z-index: 10;
+    /* width: 20%; */
+}
+.Mars .mercont #marcards{
+    position: absolute;
+    margin: 10%;
+    /* padding: 20%; */
+    /* background-color: tan; */
+    width: 100000px;
+}
+.Mars .mrcard{
+    position: relative;
+    margin-top: 20%;
+    display: flex;
+    right: -50px;
+    /* gap: 5%; */
+    width: 350px;
+    /* background-color: thistle; */
+    /* padding-right: 10%; */
+    /* padding-top:    10%; */
+    padding: 5%;
+    border-radius: 2vh;
+    background: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #430E49 0.53%, #370D44 32.06%, #170B36 89.03%, #100A33 100%);
+    border: 4px solid;
+    border-image-source: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #170B36 0%, #100A33 11.98%, #370D44 46.35%, #430E49 89.06%);
+
+}
+.Mars .marmoons{
+    padding: 2%;
+    width: 40%;
+    height: 20%;
+    /* background-color: tan; */
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    top: 44%;
+    left: 32%;
+}
+.Mars .marmoons .marmooncont{
+    /* background-color: tomato; */
+    margin: 20%;
+    margin-right: 10%;
+    margin-left: 20%;
+}
+
+.Mars #marcards .inf{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+.Mars .marmooncont h1{
+    width: 100%;
+    /* background-color: cadetblue; */
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 4vh;
+}
+
+.Mars .marmooncont p{
+    width: 100%;
+    /* background-color: cadetblue; */
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    /* font-size: 8vh; */
+}
+
+
+
+/* .Mars .marmoons .marmooncont h1,p{
+    width: 100%;
+    background-color: cadetblue;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 8vh;
+} */
+
+.Mars .marmooncont h1{
+    font-size: 4vh;
+}
+
+
+.Jupiter{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* background-color: burlywood; */
+    background: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #430E49 0.53%, #370D44 32.06%, #170B36 89.03%, #100A33 100%);
+}
+
+.Jupiter img{
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+#jupcont #main h1{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 8vh;
+}
+
+.Jupiter .mrcard .inf{
+    padding-top: 6%;
+    /* margin-left: 40%; */
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    /* font-size: 1vh; */
+}
+
+.Jupiter .mrcard i{
+    padding: 5%;
+    /* height: 90%; */
+    margin-left: 2%;
+}
+
+#jupcont #main p{
+    /* background-color: palegreen; */
+    /* font-family: "Orbitron", sans-serif; */
+    /* font-optical-sizing: auto; */
+    font-weight: 500;
+    font-size: 2vh;
+    margin-top:5% ;
+}
+
+#jupcards{
+    display: flex;
+    flex-direction: column;
+}
+
+#jupcont{
+    padding: 9%;
+    padding-left: 6%;
+    padding-right: 0;
+    margin-left: 50px;
+    height: 100%;
+    width: 50%;
+    /* background-color: turquoise; */
+    position: absolute;
+    left: 0;
+    z-index: 5;
+}
+#jupcards .mrcard{
+    padding: 4%;
+    /* padding-right: 9%; */
+    width: 60%;
+    height: 90%;
+    margin-top: 10%;
+    display: flex;
+    border-radius: 2vh;
+    background: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #430E49 0.53%, #370D44 32.06%, #170B36 89.03%, #100A33 100%);
+    border: 4px solid;
+    border-image-source: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #170B36 0%, #100A33 11.98%, #370D44 46.35%, #430E49 89.06%);}
+
+
+.Saturn{
+    height: 100%;
+    width: 100%;
+    /* background-color: yellowgreen; */
+    background: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #430E49 0.53%, #370D44 32.06%, #170B36 89.03%, #100A33 100%);
+}
+
+
+.Saturn img{
+    position: absolute;
+    z-index: 2;
+}
+
+#satcont{
+    text-align: right;
+    padding: 5%;
+    padding-top: 8%;
+    height: 100%;
+    width: 100%;
+    /* background-color: turquoise; */
+    position: absolute;
+    right: 0;
+    z-index: 5;
+}
+
+#satcont #satcards{
+    position: absolute;
+    bottom: 0;
+    right: -250px;
+    /* background-color: #fff; */
+    text-align: right;
+    margin-top: 8%;
+    /* padding: 10%; */
+    padding-top: 10%;
+    padding-right: 0;
+    height: 80%;
+    width: 50%;
+    /* background-color: red; */
+    /* align-content:space-around; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: end; */
+}
+/* #satcont #main{
+    width: 100%;
+} */
+
+#satcont #main h1{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 7vh;
+    margin-bottom: 2%;
+}
+
+#satcont #main p{
+    font-size: 2vh;
+    font-weight: 500;
+}
+
+#satcont #satcards .inf{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+
+#satcont #satcards .mrcard{
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+    height: 30%;
+    padding: 3%;
+    padding-left: 5%;
+    /* justify-content: space-arou; */
+    margin: 5%;
+    margin-right: 0;
+    border-radius:2vh;
+    background: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #430E49 0.53%, #370D44 32.06%, #170B36 89.03%, #100A33 100%);
+    border: 4px solid;
+    border-image-source: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #170B36 0%, #100A33 11.98%, #370D44 46.35%, #430E49 89.06%);
+}
+
+.Uranus{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* background-color: cornflowerblue; */
+    background: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #430E49 0.53%, #370D44 32.06%, #170B36 89.03%, #100A33 100%);
+}
+
+.Uranus img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.Uranus #main{
+    width: 32%;
+}
+
+.Uranus #main h1{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 8vh;
+    margin-bottom: 2%;
+}
+
+.Uranus #main p{
+    font-size: 1..7vh;
+    font-weight: 500;
+}
+#urcont{
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: space-around;
+    padding: 7%;
+}
+
+#urcont #cardds{
+    /* background-color: palegreen; */
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Uranus .mrcard{
+    /* background-color: teal; */
+    border-radius: 2vh;
+    background: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #430E49 0.53%, #370D44 32.06%, #170B36 89.03%, #100A33 100%);
+    border: 4px solid #3a0d45;
+    display: flex;
+    justify-content: space-evenly;
+    width:45%;
+    padding: 2%;
+}
+
+.Neptune{
+    position: relative;
+    height: 100%;
+    /* height: max-content; */
+    /* width: 100%; */
+    /* background-color: rgb(255, 154, 235); */
+    background: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #430E49 0.53%, #370D44 32.06%, #170B36 89.03%, #100A33 100%);
+}
+
+.Neptune #nepbg{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+
+.Neptune #nimg{
+    /* position: absolute; */
+    position: absolute;
+    bottom: -2.9px;
+    /* left: 6px; */
+    /* height: 25vh; */
+    width: 100%;
+    /* background-color: cornflowerblue; */
+    /* bottom: 15%; */
+}
+
+#neptimg img{
+    /* height: 50%; */
+    position: absolute;
+    /* top:0; */
+    /* bottom: 0; */
+    /* height: 100%; */
+}
+
+#neptcont{
+    text-align: center;
+    /* margin: 5%; */
+    margin-top: 2%;
+    margin-left: 17%;
+    /* background-color: antiquewhite; */
+    position: absolute;
+    z-index: 5;
+    top:0;
+}
+
+#cont1 h1{
+    /* padding: 1%; */
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 8vh;
+    margin-bottom: 1.8%;
+}
+
+.Uranus .inf{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 1vh;
+}
+#cont1 p{
+    padding-bottom:5%00;
+    font-size: 2vh;
+    font-weight: 500;
+}
+
+
+
+#cont2 #img{
+    padding-top: 5%;
+    /* font-weight: 200; */
+}
+
+#cont2 #img i{
+    font-weight: 700;
+    font-size: 7.5vh;
+    margin-right: 1.5vw;
+    margin-left: 1vw;
+}
+
+#cont2 #info h1{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 3.5vh;
+}
+
+#info h2{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 1vh;
+}
+
+#cont2 #info{
+    margin-top: 4px;
+}
+
+#cont2{
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+    /* grid-template-columns: 40%; */
+}
+
+#cont2 #card1{
+    border-radius: 2vh;
+    background: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #430E49 0.53%, #370D44 32.06%, #170B36 89.03%, #100A33 100%);
+    border: 4px solid #3a0d45;
+    width: 31%;
+    height: 14vh;
+    /* background-color: tan; */
+    display: flex;
+    padding-top: 1%;
+}
+
+#cont2 #card2{
+    padding-top: 1%;
+    border-radius: 2vh;
+    width: 31%;
+    height: 14vh;
+    border: 4px solid #3a0d45;
+    /* background-color: teal; */
+    background: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #430E49 0.53%, #370D44 32.06%, #170B36 89.03%, #100A33 100%);
+    display: flex;
+}
+
+.Footer{
+    position: relative;
+    /* width: 60%; */
+    height: 69.8%;
+    /* height:max-content; */
+    /* background-color:cadetblue; */
+    /* background-image: url(./Vector\ \(2\).png); */
+    background: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #430E49 0.53%, #370D44 32.06%, #170B36 89.03%, #100A33 100%);
+
+}
+#footbg{
+    position: absolute;
+    left: 30%;
+    height: 100%;
+}
+
+.Footer img{
+    position: absolute;
+    z-index: 1;
+}
+.Footer #futar{
+    padding: 2%;
+    position: absolute;
+    z-index: 2;
+    border: 5px solid #2b0c3f;
+    border-radius: 3vh;
+    /* text-align: center; */
+    height: 75%;
+    background-color:#1E1E1E;
+    width: 70%;
+    left: 15%;
+    top: 12%;
+}
+
+.fooooot{
+    /* padding-top: 2vh; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* position: absolute; */
+    /* z-index: 1; */
+    /* position: relative; */
+
+}
+
+#foot1{
+    /* position: absolute; */
+    /* background-color:teal; */
+    /* height: 100%; */
+    padding: 2% 5% 2% 5%;
+}
+
+#foot1 h1{
+    text-transform: capitalize;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 5vh;
+    margin-bottom: 1.5%;
+}
+#foot1 p{
+    text-align: center;
+    /* padding: 5%; */
+    /* padding-left: 10%; */
+    /* padding-right: 10%; */
+    /* font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700; */
+    font-size: 1.8vh;
+}
+
+#foot2{
+    position: relative;
+    /* background-color: tan; */
+    margin-top: 2%;
+    padding: 2%;
+    margin-bottom: 8%;
+}
+
+#foot2 #mailsubs{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 6vh;
+    border-radius: 10vh;
+    gap: 2%;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    /* position: absolute; */
+    /* text-align: center; */
+    /* padding: 1%; */
+}
+#mailsubs input{
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    margin-left: 4%;
+    color: #000;
+    width: 65%;
+    /* background-color: cornflowerblue; */
+}
+
+::placeholder {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: black;
+    opacity: 1; /* Firefox */
+  }
+
+#mailsubs #subs{
+    cursor: default;
+    padding: 0.8%;
+    display: flex;
+    justify-content: space-around;
+    /* cursor: pointer; */
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    margin: 1%;
+    border-radius: 4vh;
+    width: 25%;
+    font-size: small;
+    /* font-size: 2vh; */
+    /* padding:2vh; */
+    /* width: 15vw; */
+    /* height: 10vh; */
+    /* border-radius: 5%; */
+    background: linear-gradient(315deg, #CD1013 1.19%, #FF0004 1.5%, #2500FF 94.46%);
+}
+#subs h1{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    padding-top: 5%;
+    padding-left: 2%;
+    font-size: 1.4vh;
+}
+#subs button{
+    cursor: pointer;
+    /* padding-top: 5%; */
+    /* margin: 3%; */
+    color: black;
+    height: 30px;
+    width: 30px;
+    /* font-size:3vh; */
+    /* padding-bottom: 2%; */
+    border-radius: 50%;
+}
+#mailsubs #subs h1:hover{
+    /* scale: 95%; */
+    /* font-size: xx-large; */
+    text-decoration: dotted;
+}
+#subs button:hover{
+    scale: 120%;
+}
+
+
+#subs button i{
+    color: black;
+    font-size: 2.5vh;
+}
+
+
+#foot3{
+    position: relative;
+    bottom: 0;
+    /* background-color: thistle; */
+}
+
+.fooooot #left h1{
+    font-size: 3.5vh;
+}
+
+.fooooot #mid h2{
+    font-size: 1.5vh;
+}
+
+.fooooot .dropdown-toggle{
+    font-size: 2vh;
+}
+
+.fooooot #right h2{
+    font-size: 1.5vh;
 }
